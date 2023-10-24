@@ -1,0 +1,296 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .container
+    width: 100%
+    padding: 0 10px
+    box-sizing: border-box
+
+  .content
+    .page-carousel
+      .container
+        .header-slider
+          max-height: 580px
+        button
+          top: 70%
+        .block-title
+          top: 24%
+
+@media screen and (max-width: 1100px)
+  .content
+    .page-carousel
+      .header-slider
+        max-height: 573px
+      .block-arrows
+        bottom: 30px
+    #services
+      .container
+        .services-content
+          .line-one, .line-two
+            justify-content: space-around
+            .item
+              margin-bottom: 20px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .content
+    .page-carousel
+      .container
+        .header-slider
+          .owl-nav
+            .owl-next, .owl-prev
+              width: 30px
+              height: 30px
+              .fa
+                font-size: 30px
+        .block-title
+          width: 650px
+          .block_item
+            .it
+              max-width: 150px
+              img
+                max-width: 50px
+              p
+                font-size: 20px
+                line-height: 20px
+              &:nth-child(2)
+                max-width: 200px
+        button
+          width: 280px
+          height: 50px
+          font-size: 18px
+          top: 70%
+    .block_callback
+      .container
+        form
+          flex-direction: column
+          align-items: center
+          width: 270px
+          label
+            &:nth-child(1), &:nth-child(2)
+              width: 100%
+            &:nth-child(2)
+              margin: 20px 0
+
+  h1
+    font-size: 40px
+    span
+      font-size: 30px
+
+@media screen and (max-width: 900px)
+  .header_menu
+    .container
+      ul
+        li
+          a
+            font-size: 16px
+  .content
+    #services
+      .container
+        .services-content
+          justify-content: space-around
+
+@media screen and (max-width: 870px)
+  header, footer
+    .header_top
+      .container
+        &:before
+          display: none
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .content
+    .page-carousel
+      .container
+        .header-slider
+        .block-title
+          width: calc(100% - 20px)
+          top: 15%
+          height: 200px
+
+  .header_menu
+    display: none
+
+  .mobile_menu
+    display: block
+
+  h1
+    font-size: 30px
+    line-height: 36px
+    span
+      font-size: 20px
+
+  header, footer
+    .header_top
+      .container
+        flex-direction: column
+        align-items: center
+        .logo
+          width: 350px
+          img
+            width: 120px
+          p
+            font-size: 20px
+            line-height: 24px
+        .block_contacts
+          align-items: center
+          a
+            text-align: center
+            font-size: 24px
+            order: -3
+
+@media screen and (max-width: 675px)
+  .content
+    #reviews
+      .container
+        .reviews_content
+          flex-direction: column
+          align-items: center
+          .item
+            width: 100%
+            flex-direction: column
+            align-items: center
+            img
+              margin: 0 0 10px 0
+            p
+              max-width: 100%
+              text-align: center
+    .block_callback
+      .container
+        p
+          font-size: 18px
+          margin: 0 0 20px 0
+        form
+          margin: 0 auto 30px
+    #services
+      .container
+        .services-content
+          flex-direction: column
+          align-items: center
+
+  h2
+    margin: 25px 0 30px
+    font-size: 26px
+
+  //.overlayMenu
+  //  ul
+  //    li
+  //      a
+  //        font-size: 16px
+  //        padding: 10px 20px
+
+@media screen and (max-width: 530px)
+  .content
+    .page-carousel
+      .container
+        .header-slider
+          background: url("../img/slide2.jpg") no-repeat center
+          -webkit-background-size: cover
+          background-size: cover
+          height: 600px
+          .owl-nav
+            display: none
+          .carousel_item
+            display: none
+        .block-title
+          height: 330px
+          .block_item
+            margin-top: 20px
+            flex-direction: column
+            .it
+              max-width: 100%
+              margin-bottom: 15px
+              &:nth-child(2)
+                max-width: 100%
+        button
+          top: 80%
+    #ral
+      .container
+        .block-content
+          justify-content: space-around
+
+@media screen and (max-width: 575px)
+  .content
+    #services
+      margin-bottom: 0
+      .container
+        h2
+          margin-bottom: 30px
+        .services-content
+          .line-one, .line-two
+            flex-direction: column
+            align-items: center
+            .item
+              .block-text
+                min-height: auto
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .content
+    .page-carousel
+      .block-title
+        .container
+          padding: 10px 0
+
+  header, footer
+    .header_top
+      .container
+        .logo
+          width: 270px
+          p
+            font-size: 18px
+            line-height: 18px
+
+  //.overlay
+  //  width: 50%
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 400px)
+  .content
+    .page-carousel
+      .block-title
+        .container
+          h1
+            line-height: 44px
+            font-size: 35px
+            margin-bottom: 5px
+            span
+              font-size: 26px
+          p
+            margin: 10px 5px
+          a
+            margin: 10px 0
+
+
+@media only screen and (max-width : 370px)
+	.content
+    #ral
+      .container
+        .block-content
+          flex-direction: column
+          align-items: center
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
